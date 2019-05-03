@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Cormac Hayden</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/css/mdb.min.css" />
+
+  <!-- Custom fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="css/clean-blog.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">Sample Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- Scrolling Text -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <p> If you can keep your head when all about you Are losing theirs and blaming it on you,
+        If you can trust yourself when all men doubt you,
+        But make allowance for their doubting too;
+        If you can wait and not be tired by waiting,
+        Or being lied about, don’t deal in lies,
+        Or being hated, don’t give way to hating,
+        And yet don’t look too good, nor talk too wise:
+        If you can dream—and not make dreams your master;
+        If you can think—and not make thoughts your aim;
+        If you can meet with Triumph and Disaster
+        And treat those two impostors just the same;
+        If you can bear to hear the truth you’ve spoken
+        Twisted by knaves to make a trap for fools,
+        Or watch the things you gave your life to, broken,
+        And stoop and build ’em up with worn-out tools:
+        If you can make one heap of all your winnings
+        And risk it on one turn of pitch-and-toss,
+        And lose, and start again at your beginnings
+        And never breathe a word about your loss;
+        If you can force your heart and nerve and sinew
+        To serve your turn long after they are gone,
+        And so hold on when there is nothing in you
+        Except the Will which says to them: ‘Hold on!’
+        If you can talk with crowds and keep your virtue,
+        Or walk with Kings—nor lose the common touch,
+        If neither foes nor loving friends can hurt you,
+        If all men count with you, but none too much;
+        If you can fill the unforgiving minute
+        With sixty seconds’ worth of distance run,
+        Yours is the Earth and everything that’s in it,
+        And—which is more—you’ll be a Man, my son! –RUDYARD KIPLING
+      </p>
+    </div>
+  </div>
+
+
+
+  <!-- Fans -->
+  <header>
+    <div class="container tilt">
+      <div class="c-example__tilt js-tilt">
+        <div class="c-example__tilt-inner"></div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="row">
+    <div class="col-sm-4 project-border project-col">
+      <div class="project-col">
+        <div class="heading-wrapper">
+          <div class="title-wrapper">
+            <span class="project-title expandable"
+              onclick="$(this).parent().parent().parent().find('.inner-content').toggle(); setIframe();"><i></i>OptionBlox
+              Crypto<i></i></span>
+          </div>
+          <div class="filter-wrapper">
+            <span class="filter-button ">Web Dev</span>
+          </div>
+        </div>
+        <div class="project-brand">
+          <p>Option-Blox engineers expanded derivative options including assets with positive and negative correlations
+            to cryptocurrency</p>
+        </div>
+        <div class="inner-content">
+          <div class="gallery">
+            <div class="project-img-container">
+              <a name="img-1" href="http://option-blox.webflow.io/" target="_blank">
+                <img class="single-img"
+                  src="https://lh3.googleusercontent.com/jRkafInqWTT20ozi-jh_wyZMgz05bp3dDWFy2GQYal4Qv5D6mED8LORLcqZeTrtUq-Q4-5nOgVHrLacOBzKJPS4ey-uXvEmzzHGOA-n8X34tAABcJk_xev47TXI-jqdLJrd8h0zdpA=w2400">
+              </a>
+            </div>
+            <div style="width:100%; float:left;">
+              <span class="more-images" onclick="moreImagesOB()" id="moreImageBtn">More Images</span>
+            </div>
+            <br>
+            <div class="image-container" id="OB-hidden-1"></div>
+          </div>
+        </div>
+      </div>
+      <hr class="separator">
+
+      <div class="project-col">
+          <div class="heading-wrapper">
+            <div class="title-wrapper">
+              <a name="img-1" href="http://ben-peters.webflow.io/" target="_blank"></a>
+              <span class="project-title expandable"
+                onclick="$(this).parent().parent().parent().find('.inner-content').toggle(); setIframe();"><i></i>Ben Peters Consult<i></i></span>
+            </div>
+            <div class="filter-wrapper">
+              <span class="filter-button ">Web Dev</span>
+            </div>
+          </div>
+          <div class="project-brand">
+            <p>Millenial, an iTunes chart-topping podcast, run by Cornell extraordinare Ben Peters.</p>
+          </div>
+          <div class="inner-content">
+            <div class="gallery">
+              <div class="project-img-container">
+                <a name="img-1" href="http://ben-peters.webflow.io/" target="_blank">
+                  <img class="single-img" src="https://i.imgur.com/PIgz0KV.jpg">
+                </a>
+              </div>
+              <div style="width:100%; float:left;">
+                <span class="more-images" onclick="moreImagesBen()" id="moreImageBtnBen">More Images</span>
+              </div>
+              <br>
+              <div class="image-container" id="Ben-hidden-1">
+              </div>
+              <div class="image-container" id="Ben-hidden-2">
+              </div>
+            </div>
+          </div>
+        </div>
+      <hr class="separator">
+
+
+      <div class="project-col">
+          <div class="heading-wrapper">
+            <div class="title-wrapper">
+              <a name="img-1" href=" https://itunes.apple.com/us/app/juju-on-that-beat-challenge/id1172627190?mt=8" target="_blank"></a>
+              <span class="project-title expandable"
+                onclick="$(this).parent().parent().parent().find('.inner-content').toggle(); setIframe();"><i></i>Juju on the Beat<i></i></span>
+            </div>
+            <div class="filter-wrapper">
+              <span class="filter-button ">Mobile Dev</span>
+            </div>
+          </div>
+          <div class="project-brand">
+            <p>Top-Ranking App Store game ranking #65 in games.</p>
+          </div>
+          <div class="inner-content">
+            <div class="gallery">
+              <div class="project-img-container">
+                <a name="img-1" href="https://itunes.apple.com/us/app/juju-on-that-beat-challenge/id1172627190?mt=8" target="_blank">
+                  <img class="single-img juju" src="https://i.imgur.com/pU95HNW.jpg">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="separator">
+    </div>
+
+    <div class="col-sm-4 project-border project-col">
+
+      <div class="project-col">
+        <div class="heading-wrapper">
+          <div class="title-wrapper">
+            <a name="img-1" href="http://uchu-biosensors.webflow.io/" target="_blank"></a>
+            <span class="project-title expandable"
+              onclick="$(this).parent().parent().parent().find('.inner-content').toggle(); setIframe();"><i></i>U-CHU
+              Biosensors<i></i></span>
+          </div>
+          <div class="filter-wrapper">
+            <span class="filter-button ">Web Dev</span>
+          </div>
+        </div>
+        <div class="project-brand">
+          <p>Tufts University startup producing intraoral sensors for personal health management</p>
+        </div>
+        <div class="inner-content">
+          <div class="gallery">
+            <div class="project-img-container">
+              <a name="img-1" href="http://uchu-biosensors.webflow.io/" target="_blank">
+                <img class="single-img"
+                  src="https://i.imgur.com/nkrterg.jpg">
+              </a>
+            </div>
+            <div style="width:100%; float:left;">
+              <span class="more-images" onclick="moreImagesUCHU()" id="moreImageBtnUchu">More Images</span>
+            </div>
+            <br>
+            <div class="image-container" id="Uchu-hidden-1">
+            </div>
+            <div class="image-container" id="Uchu-hidden-2">
+            </div>
+            <div class="image-container" id="Uchu-hidden-3">
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="separator">
+
+      <div class="project-col">
+          <div class="heading-wrapper">
+            <div class="title-wrapper">
+              <a name="img-1" href="http://jake-lundell.webflow.io/" target="_blank"></a>
+              <span class="project-title expandable"
+                onclick="$(this).parent().parent().parent().find('.inner-content').toggle(); setIframe();"><i></i>Jake Filmmaker<i></i></span>
+            </div>
+            <div class="filter-wrapper">
+              <span class="filter-button ">Web Dev</span>
+            </div>
+          </div>
+          <div class="project-brand">
+            <p>Award-winning Minneapolis filmmaker specializing in music videos.</p>
+          </div>
+          <div class="inner-content">
+            <div class="gallery">
+              <div class="project-img-container">
+                <a name="img-1" href="http://jake-lundell.webflow.io/" target="_blank">
+                  <img class="single-img" src="https://i.imgur.com/WVsV0Vk.jpg">
+                </a>
+              </div>
+              <div style="width:100%; float:left;">
+                <span class="more-images" onclick="moreImagesJake()" id="moreImageBtnJake">More Images</span>
+              </div>
+              <br>
+              <div class="image-container" id="Jake-hidden-1">
+              </div>
+              <div class="image-container" id="Jake-hidden-2">
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="separator">
+
+        <div class="project-col">
+            <div class="heading-wrapper">
+              <div class="title-wrapper">
+                <a name="img-1" href="http://zeanmacfarlane.webflow.io/" target="_blank"></a>
+                <span class="project-title expandable"
+                  onclick="$(this).parent().parent().parent().find('.inner-content').toggle(); setIframe();"><i></i>Modern Architect<i></i></span>
+              </div>
+              <div class="filter-wrapper">
+                <span class="filter-button ">Web Dev</span>
+              </div>
+            </div>
+            <div class="project-brand">
+              <p>Zean Macfarlane designs modern structural solutions.</p>
+            </div>
+            <div class="inner-content">
+              <div class="gallery">
+                <div class="project-img-container">
+                  <a name="img-1" href="http://zeanmacfarlane.webflow.io/" target="_blank">
+                    <img class="single-img" src="https://i.imgur.com/PBz82va.jpg">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="separator">
+
+    </div>
+
+    <div class="col-sm-4 project-border project-col">
+      <div class="project-col">
+        <div class="heading-wrapper">
+          <div class="title-wrapper">
+            <a name="img-1" href="http://faith-irving.webflow.io/" target="_blank"></a>
+            <span class="project-title expandable"
+              onclick="$(this).parent().parent().parent().find('.inner-content').toggle(); setIframe();"><i></i>Faith
+              Irving<i></i></span>
+          </div>
+          <div class="filter-wrapper">
+            <span class="filter-button ">Web Dev</span>
+          </div>
+        </div>
+        <div class="project-brand">
+          <p>The power lies within you. California Model.</p>
+        </div>
+        <div class="inner-content">
+          <div class="gallery">
+            <div class="project-img-container">
+              <a name="img-1" href="http://faith-irving.webflow.io/" target="_blank">
+                <img class="single-img" src="https://i.imgur.com/limqguG.jpg">
+              </a>
+            </div>
+            <div style="width:100%; float:left;">
+              <span class="more-images" onclick="moreImagesFaith()" id="moreImageBtnFaith">More Images</span>
+            </div>
+            <br>
+            <div class="image-container" id="Faith-hidden-1">
+            </div>
+            <div class="image-container" id="Faith-hidden-2">
+            </div>
+            <div class="image-container" id="Faith-hidden-3">
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="separator">
+
+      <div class="project-col">
+          <div class="heading-wrapper">
+            <div class="title-wrapper">
+              <a name="img-1" href="http://saint-priva.webflow.io/" target="_blank"></a>
+              <span class="project-title expandable"
+                onclick="$(this).parent().parent().parent().find('.inner-content').toggle(); setIframe();"><i></i>Saint Priva<i></i></span>
+            </div>
+            <div class="filter-wrapper">
+              <span class="filter-button ">Web Dev</span>
+            </div>
+          </div>
+          <div class="project-brand">
+            <p>LIVE YOUR DREAM LIFE — WE ARE A TEAM OF CREATORS BUILDING THE FUTURE. 🌺</p>
+          </div>
+          <div class="inner-content">
+            <div class="gallery">
+              <div class="project-img-container">
+                <a name="img-1" href="http://saint-priva.webflow.io/" target="_blank">
+                  <img class="single-img" src="https://i.imgur.com/orTRkLa.jpg">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="separator">
+
+        <div class="project-col">
+            <div class="heading-wrapper">
+              <div class="title-wrapper">
+                <a name="img-1" href="https://www.vitaz.com/" target="_blank"></a>
+                <span class="project-title expandable"
+                  onclick="$(this).parent().parent().parent().find('.inner-content').toggle(); setIframe();"><i></i>Vitaz Skincare<i></i></span>
+              </div>
+              <div class="filter-wrapper">
+                <span class="filter-button ">Web Dev</span>
+              </div>
+            </div>
+            <div class="project-brand">
+              <p>Radiate beauty from the inside out with all-natural Swedish lotions.</p>
+            </div>
+            <div class="inner-content">
+              <div class="gallery">
+                <div class="project-img-container">
+                  <a name="img-1" href="https://www.vitaz.com/" target="_blank">
+                    <img class="single-img" src="https://i.imgur.com/M2Pa3qO.jpg">
+                  </a>
+                </div>
+                <div style="width:100%; float:left;">
+                  <span class="more-images" onclick="moreImagesVitaz()" id="moreImageBtnVitaz">More Images</span>
+                </div>
+                <br>
+                <div class="image-container" id="Vitaz-hidden-1">
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="separator">
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Main Content
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              Man must explore, and this is exploration at its greatest
+            </h2>
+            <h3 class="post-subtitle">
+              Problems look mighty small from 150 miles up
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on September 24, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+            </h2>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on September 18, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              Science has not yet mastered prophecy
+            </h2>
+            <h3 class="post-subtitle">
+              We predict too much for the next year and yet far too little for the next ten.
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on August 24, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              Failure is not an option
+            </h2>
+            <h3 class="post-subtitle">
+              Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on July 8, 2019</p>
+        </div>
+        <hr>
+        <!-- Pager -->
+  <!--
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Footer -->
+<footer class="page-footer font-small darken-3">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+     <!-- Grid column -->
+     <div class="col-md-12 col-12 mt-5">
+        <p class="footer-title">Let's make your website.</p>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid row-->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-12 py-5">
+          <div class="flex-center">
+
+            <!--Linkedin-->
+            <button type="button" class="btn btn-li"><i class="fab fa-linkedin-in black-btn"></i></button>
+            <!--Instagram-->
+            <button type="button" class="btn btn-ins"><i class="fab fa-instagram black-btn"></i></button>
+            <!--Stack Overflow-->
+            <button type="button" class="btn btn-so"><i class="fab fa-stack-overflow black-btn"></i></button>
+            <!--Github-->
+            <button type="button" class="btn btn-git"><i class="fab fa-github black-btn"></i></button>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="email text-center">Contact:
+      <a class="email" ref = "mailto: cormacncheese@gmail.com">Cormacncheese@gmail.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+  <!-- Footer
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+  <!-- Three.js -->
+  <script src="js/three.js"></script>
+
+  <!-- Material Design Bootstrap -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/js/mdb.min.js"></script>
+
+  <!-- Parallax -->
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/tilt.js/dest/tilt.jquery.js"></script>
+  <script>
+    const tilt = $('.js-tilt').tilt();
+    $('.js-destroy').on('click', function () {
+      const element = $(this).closest('.js-parent').find('.js-tilt');
+      element.tilt.destroy.call(element);
+    });
+    $('.js-getvalue').on('click', function () {
+      const element = $(this).closest('.js-parent').find('.js-tilt');
+      const test = element.tilt.getValues.call(element);
+      console.log(test[0]);
+    });
+    $('.js-reset').on('click', function () {
+      const element = $(this).closest('.js-parent').find('.js-tilt');
+      element.tilt.reset.call(element);
+    });
+  </script>
+
+
+  <!-- More Images -->
+  <script>
+    function moreImagesOB() {
+      if (document.getElementById("moreImageBtn").innerHTML === "More Images") {
+        document.getElementById("OB-hidden-1").innerHTML = "<a name='img-1' href='http://option-blox.webflow.io/' target='_blank'><img class='single-img' src='https://lh3.googleusercontent.com/Zc2yW4V8CW8IVkkTiMcxPiZx7DwZIeSDWf3hbhjnIw8yZ9jO2teDNPK1tS3DLh4wosYAqczBBlbUNCPG7--KH7L5gfSkeVo-wGFIHsm_S4PaB5pyQ1d3_RJdQSso4RNnfmbZWRfbRQ=w1920-h1080'></a>"
+        document.getElementById("moreImageBtn").innerHTML = "Less Images"
+      } else if (document.getElementById("moreImageBtn").innerHTML === "Less Images") {
+        document.getElementById("OB-hidden-1").innerHTML = ""
+        document.getElementById("moreImageBtn").innerHTML = "More Images"
+      }
+    }
+    function moreImagesUCHU() {
+      if (document.getElementById("moreImageBtnUchu").innerHTML === "More Images") {
+        document.getElementById("Uchu-hidden-1").innerHTML = "<a name='img-1' href='http://uchu-biosensors.webflow.io/' target='_blank'><img class='single-img' src='https://i.imgur.com/mUaBHMF.jpg'></a>"
+        document.getElementById("Uchu-hidden-2").innerHTML = "<a name='img-1' href='http://uchu-biosensors.webflow.io/' target='_blank'><img class='single-img' src='https://i.imgur.com/9Jj5e3r.jpg></a>"
+        document.getElementById("Uchu-hidden-3").innerHTML = "<a name='img-1' href='http://uchu-biosensors.webflow.io/' target='_blank'><img class='single-img' src='https://i.imgur.com/S321xPJ.jpg'></a>"
+        document.getElementById("moreImageBtnUchu").innerHTML = "Less Images"
+      } else if (document.getElementById("moreImageBtnUchu").innerHTML === "Less Images") {
+        document.getElementById("Uchu-hidden-1").innerHTML = ""
+        document.getElementById("Uchu-hidden-2").innerHTML = ""
+        document.getElementById("Uchu-hidden-3").innerHTML = ""
+        document.getElementById("moreImageBtnUchu").innerHTML = "More Images"
+      }
+    }
+    function moreImagesFaith() {
+      if (document.getElementById("moreImageBtnFaith").innerHTML === "More Images") {
+        document.getElementById("Faith-hidden-1").innerHTML = "<a name='img-1' href='http://faith-irving.webflow.io/' target='_blank'><img class='single-img' src='https://i.imgur.com/B7Nmcx7.jpg'></a>"
+        document.getElementById("moreImageBtnFaith").innerHTML = "Less Images"
+      } else if (document.getElementById("moreImageBtnUchu").innerHTML === "Less Images") {
+        document.getElementById("Uchu-hidden-1").innerHTML = ""
+        document.getElementById("moreImageBtnFaith").innerHTML = "More Images"
+      }
+    }
+    function moreImagesBen() {
+      if (document.getElementById("moreImageBtnBen").innerHTML === "More Images") {
+        document.getElementById("Ben-hidden-1").innerHTML = "<a name='img-1' href='http://ben-peters.webflow.io/' target='_blank'><img class='single-img' src='https://i.imgur.com/V4YzkuQ.jpg'></a>"
+        document.getElementById("Ben-hidden-2").innerHTML = "<a name='img-1' href='http://ben-peters.webflow.io/' target='_blank'><img class='single-img' src='https://i.imgur.com/mQxF6QW.jpg'></a>"
+        document.getElementById("moreImageBtnBen").innerHTML = "Less Images"
+      } else if (document.getElementById("moreImageBtnBen").innerHTML === "Less Images") {
+        document.getElementById("Ben-hidden-1").innerHTML = ""
+        document.getElementById("Ben-hidden-2").innerHTML = ""
+        document.getElementById("moreImageBtnBen").innerHTML = "More Images"
+      }
+    }
+    function moreImagesJake() {
+      if (document.getElementById("moreImageBtnJake").innerHTML === "More Images") {
+        document.getElementById("Jake-hidden-1").innerHTML = "<a name='img-1' href='http://jake-lundell.webflow.io/' target='_blank'><img class='single-img' src='https://i.imgur.com/s9R4YsG.jpg'></a>"
+        document.getElementById("Jake-hidden-2").innerHTML = "<a name='img-1' href='http://jake-lundell.webflow.io/' target='_blank'><img class='single-img' src='https://i.imgur.com/I4tVm93.jpg'></a>"
+        document.getElementById("moreImageBtnJake").innerHTML = "Less Images"
+      } else if (document.getElementById("moreImageBtnJake").innerHTML === "Less Images") {
+        document.getElementById("Jake-hidden-1").innerHTML = ""
+        document.getElementById("Jake-hidden-2").innerHTML = ""
+        document.getElementById("moreImageBtnJake").innerHTML = "More Images"
+      }
+    }
+    function moreImagesVitaz() {
+      if (document.getElementById("moreImageBtnVitaz").innerHTML === "More Images") {
+        document.getElementById("Vitaz-hidden-1").innerHTML = "<a name='img-1' href='https://vitaz.com' target='_blank'><img class='single-img' src='https://i.imgur.com/iDVFCB5.jpg'></a>"
+        document.getElementById("moreImageBtnVitaz").innerHTML = "Less Images"
+      } else if (document.getElementById("moreImageBtnVitaz").innerHTML === "Less Images") {
+        document.getElementById("Vitaz-hidden-1").innerHTML = ""
+        document.getElementById("moreImageBtnVitaz").innerHTML = "More Images"
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>
